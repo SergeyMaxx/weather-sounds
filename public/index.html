@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.png">
   <title>Weather sounds</title>
 </head>
 <body>
- <div>Hello webpack</div>
+ <h1>Weather sounds</h1>
+ <div class="container">
+   <button class="summer">
+     <img class="icon" src="icons/sun.svg" alt="summer">
+     <img class="hide pause" src="icons/pause.svg" alt="pause">
+     <audio src="sounds/summer.mp3" preload="auto"></audio>
+   </button>
+   <button class="rain">
+     <img class="icon" src="icons/cloud-rain.svg" alt="rain">
+     <img class="hide pause" src="icons/pause.svg" alt="pause">
+     <audio src="sounds/rain.mp3" preload="auto"></audio>
+   </button>
+   <button class="winter">
+     <img class="icon" src="icons/cloud-snow.svg" alt="winter">
+     <img class="hide pause" src="icons/pause.svg" alt="pause">
+     <audio src="sounds/winter.mp3" preload="auto"></audio>
+   </button>
+ </div>
+ <div class="wrap">
+   <input type="range" id="volumeRange" min="0" max="100" step="1" value="50">
+ </div>
 </body>
 </html>

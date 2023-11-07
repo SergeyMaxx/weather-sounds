@@ -21,8 +21,5 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  rules: {
-    semi: ['error', 'always'],
-    quotes: ['error', 'single']
-  }
+  rules: {}
 }
