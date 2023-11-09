@@ -12,7 +12,7 @@ module.exports = {
     clean: true
   },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', 'ts']
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -45,6 +45,11 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource'
+      },
+      {
+        test: /\.[tj]s?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       }
     ]
   }
